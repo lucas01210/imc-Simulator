@@ -1,0 +1,227 @@
+[
+  {
+    "id": "tea-media-targeting",
+    "module": "media",
+    "title": "媒介策略定向：把“触达”送到更可能转化的人群",
+    "situationDescription": "国潮茶饮要在旺季快速放大销量，但媒体投放如果过度追量会造成“认知高却不信”。作为 CMO，你需要用 IMC 把媒介策略与后续承接打通。",
+    "decisionGoal": "通过渠道定向与节奏控制提升认知质量与转化效率，同时守住信任与长期口碑资产。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "定向频次 + 内容承接（课程/配方故事）",
+        "effect": {
+          "awareness": 11,
+          "trust": 5,
+          "sales": 9,
+          "budget": -20,
+          "consistency": 3,
+          "stakeholderRelations": 2,
+          "sentiment": 2,
+          "teamwork": 2,
+          "longTermAsset": 4
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "广撒高频 + 粗促销（容易引发反感）",
+        "effect": {
+          "awareness": 16,
+          "trust": -3,
+          "sales": 10,
+          "budget": -26,
+          "consistency": -3,
+          "stakeholderRelations": -2,
+          "sentiment": -7,
+          "teamwork": 0,
+          "longTermAsset": -4
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "分层定向 + 互动跟进（答疑与口味共创）",
+        "effect": {
+          "awareness": 9,
+          "trust": 4,
+          "sales": 8,
+          "budget": -18,
+          "consistency": 2,
+          "stakeholderRelations": 4,
+          "sentiment": 1,
+          "teamwork": 2,
+          "longTermAsset": 3
+        }
+      }
+    ],
+    "teachingFeedback": "媒体策略影响的不只是覆盖量，更是后续承接的人群质量。高质量触点会更容易形成信任，并把转化从一次性促销变成可复用资产。",
+    "imcTheoryPoint": "IMC 强调触点一致性：媒介定向决定“谁看到”，内容/公关决定“看到后是否相信”。",
+    "visualKey": "tea_visual_media_targeting",
+    "description": "通过定向与节奏控制让认知增长来自更高质量触点。",
+    "teaching": {
+      "title": "IMC 教学点：媒介策略影响触点质量",
+      "bullets": [
+        "定向提升有效到达率，让后续内容更接得住。",
+        "节奏控制能降低用户的“促销疲劳”。"
+      ]
+    },
+    "category": "tea",
+    "impact": {
+      "awareness": 11,
+      "trust": 5,
+      "sentiment": 2,
+      "sales": 9,
+      "budget": -20,
+      "consistency": 3,
+      "stakeholderRelations": 2,
+      "teamwork": 2,
+      "longTermAsset": 4
+    },
+    "tone": "good"
+  },
+  {
+    "id": "tea-pr-community",
+    "module": "pr",
+    "title": "社区共创公关：把口碑从“传播”变成“共识”",
+    "situationDescription": "用户在论坛讨论原料来源与口味稳定性，出现质疑声音。若只用单向声明，很难建立共识；如果将利益相关者纳入共创流程，信任更可能被修复并沉淀为长期资产。",
+    "decisionGoal": "通过利益相关者沟通与参与式互动，修复信任并把舆情导向长期口碑资产。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "公开原料数据 + 社区共创评测（邀请参与）",
+        "effect": {
+          "trust": 8,
+          "sentiment": 5,
+          "awareness": 2,
+          "sales": 2,
+          "budget": -15,
+          "consistency": 2,
+          "stakeholderRelations": 7,
+          "teamwork": 2,
+          "longTermAsset": 6
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "通用声明 + 无解释（负面会被反复引用）",
+        "effect": {
+          "trust": -6,
+          "sentiment": -8,
+          "awareness": 1,
+          "sales": -1,
+          "budget": -10,
+          "consistency": -2,
+          "stakeholderRelations": -4,
+          "teamwork": -1,
+          "longTermAsset": -5
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "第三方背书 + KOL探访讲解（把证据讲清楚）",
+        "effect": {
+          "trust": 6,
+          "sentiment": 2,
+          "awareness": 4,
+          "sales": 4,
+          "budget": -19,
+          "consistency": 1,
+          "stakeholderRelations": 5,
+          "teamwork": 1,
+          "longTermAsset": 4
+        }
+      }
+    ],
+    "teachingFeedback": "PR 的价值在于减少不确定性。通过参与式互动，用户不只是被告知，而是共同验证，从而形成更稳定的信任与口碑资产。",
+    "imcTheoryPoint": "利益相关者沟通能塑造长期资产：当证据与体验被共同理解，舆情更易转向正向。",
+    "visualKey": "tea_visual_pr_community",
+    "description": "通过利益相关者参与提升信任与长期口碑。",
+    "teaching": {
+      "title": "IMC 教学点：利益相关者沟通塑造长期资产",
+      "bullets": ["参与式互动提升信任与舆情正向性。", "口碑资产比一次促销更可持续。"]
+    },
+    "category": "tea",
+    "impact": {
+      "trust": 8,
+      "sentiment": 5,
+      "awareness": 2,
+      "sales": 2,
+      "budget": -15,
+      "consistency": 2,
+      "stakeholderRelations": 7,
+      "teamwork": 2,
+      "longTermAsset": 6
+    },
+    "tone": "good"
+  },
+  {
+    "id": "tea-sales-ugc-recipe",
+    "module": "sales",
+    "title": "促销设计：折扣 + 体验承接 + UGC食谱（把销量变口碑）",
+    "situationDescription": "为了冲刺销量，你计划在限定时间推出优惠。问题是：如果只把用户吸引进“便宜”，而不提供体验与使用场景，舆情会快速反噬长期品牌资产。",
+    "decisionGoal": "用促销机制设计把转化承接到体验、再沉淀到UGC口碑与复购逻辑。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "优惠 + 配方教学 + 口味共创打卡（体验闭环）",
+        "effect": {
+          "sales": 14,
+          "trust": 3,
+          "sentiment": 3,
+          "budget": -30,
+          "consistency": 4,
+          "stakeholderRelations": 5,
+          "teamwork": 2,
+          "longTermAsset": 6
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "深度折扣无体验承接（短期冲量、长期受压）",
+        "effect": {
+          "sales": 18,
+          "trust": -5,
+          "sentiment": -9,
+          "budget": -34,
+          "consistency": -3,
+          "stakeholderRelations": -2,
+          "teamwork": -1,
+          "longTermAsset": -6
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "限定时间 + 质量承诺（用售后/保证降低风险）",
+        "effect": {
+          "sales": 12,
+          "trust": 2,
+          "sentiment": 1,
+          "budget": -26,
+          "consistency": 2,
+          "stakeholderRelations": 2,
+          "teamwork": 1,
+          "longTermAsset": 3
+        }
+      }
+    ],
+    "teachingFeedback": "销售促进不是“越大越好”。在 IMC 逻辑中，促销必须与内容/体验承接同步，否则舆情会把短期销量的成本回灌给长期资产。",
+    "imcTheoryPoint": "促销节奏需要服务品牌资产：转化要通过体验与口碑承接才能可持续。",
+    "visualKey": "tea_visual_sales_promo_ugc",
+    "description": "用折扣承接体验并沉淀UGC口碑资产。",
+    "teaching": {
+      "title": "IMC 教学点：促销要和体验承接联动",
+      "bullets": ["短期销量与长期资产可能背离，需要设计体验承接。", "信任不足时促销负面会被放大。"]
+    },
+    "category": "tea",
+    "impact": {
+      "sales": 14,
+      "trust": 3,
+      "sentiment": 3,
+      "budget": -30,
+      "consistency": 4,
+      "stakeholderRelations": 5,
+      "teamwork": 2,
+      "longTermAsset": 6
+    },
+    "tone": "neutral"
+  }
+]
+

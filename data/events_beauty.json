@@ -1,0 +1,233 @@
+[
+  {
+    "id": "beauty-ads-content-consistency",
+    "module": "advertising",
+    "title": "广告触达 + 统一叙事内容承接：让用户从“看见”到“理解”",
+    "situationDescription": "新锐美妆品牌在新品期需要快速扩展曝光，但如果创意与落地页口径不一致，会引发“看过却不信”的认知偏差。作为 CMO，你要把 IMC 链路做成闭环：覆盖→理解→信任→转化。",
+    "decisionGoal": "用跨渠道一致的内容与媒介承接，提升认知质量与信任底座，同时控制预算浪费。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "高质量短视频 + 统一功效叙事（广告到落地同口径）",
+        "effect": {
+          "awareness": 12,
+          "trust": 6,
+          "sales": 5,
+          "budget": -18,
+          "consistency": 7,
+          "stakeholderRelations": 2,
+          "sentiment": 2,
+          "teamwork": 1,
+          "longTermAsset": 4
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "追量粗投放：频次堆叠但落地口径不一致",
+        "effect": {
+          "awareness": 18,
+          "trust": -2,
+          "sales": 6,
+          "budget": -22,
+          "consistency": -4,
+          "stakeholderRelations": -1,
+          "sentiment": -6,
+          "teamwork": 0,
+          "longTermAsset": -3
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "受众分层定向 + 一致口径（中等预算、稳步承接）",
+        "effect": {
+          "awareness": 10,
+          "trust": 4,
+          "sales": 4,
+          "budget": -15,
+          "consistency": 3,
+          "stakeholderRelations": 1,
+          "sentiment": 0,
+          "teamwork": 1,
+          "longTermAsset": 2
+        }
+      }
+    ],
+    "teachingFeedback": "当广告负责覆盖时，内容负责“理解路径”。一致的口径能降低不确定性，让信任从被动认知走向可验证的判断。",
+    "imcTheoryPoint": "IMC 关键不在单点加成，而在跨渠道一致信息塑造消费者认知与信任链路。",
+    "visualKey": "beauty_visual_ad_content_consistency",
+    "description": "用广告触达 + 统一叙事内容承接，提升认知质量与信任底座。",
+    "teaching": {
+      "title": "IMC 教学点：媒体覆盖与内容理解必须同口径",
+      "bullets": [
+        "广告提供进入通路，但内容决定理解深度。",
+        "跨渠道一致性减少认知偏差，避免“看过但不信”。"
+      ]
+    },
+    "category": "beauty",
+    "impact": {
+      "awareness": 12,
+      "trust": 6,
+      "sentiment": 2,
+      "sales": 5,
+      "budget": -18,
+      "consistency": 7,
+      "stakeholderRelations": 2,
+      "teamwork": 1,
+      "longTermAsset": 4
+    },
+    "tone": "good"
+  },
+  {
+    "id": "beauty-pr-crisis-claims",
+    "module": "crisis",
+    "title": "成分/功效争议的公关回应：透明补救守住长期资产",
+    "situationDescription": "消费者在社媒发起讨论，质疑新锐美妆的成分来源与宣称效果。舆情出现波动，如果你只做“硬回应”，会加剧不信任扩散；如果你延迟行动，信任会持续消耗。",
+    "decisionGoal": "通过公关透明补救与一致行动，快速修复信任并抑制负面情绪外溢，同时控制短期销售冲击。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "公开数据口径 + 透明补救（声明、解释、补偿并联动客服）",
+        "effect": {
+          "trust": 8,
+          "sentiment": 6,
+          "sales": -2,
+          "budget": -12,
+          "consistency": 2,
+          "stakeholderRelations": 7,
+          "teamwork": 2,
+          "longTermAsset": 3
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "防御性声明延迟 + 避重就轻（短期降噪但缺乏透明）",
+        "effect": {
+          "trust": -6,
+          "sentiment": -10,
+          "sales": 1,
+          "budget": -8,
+          "consistency": -2,
+          "stakeholderRelations": -4,
+          "teamwork": -2,
+          "longTermAsset": -6
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "联合KOL复盘教学：解释争议点并给出使用改进方案",
+        "effect": {
+          "trust": 4,
+          "sentiment": 2,
+          "sales": 3,
+          "budget": -14,
+          "consistency": 1,
+          "stakeholderRelations": 3,
+          "teamwork": 1,
+          "longTermAsset": 1
+        }
+      }
+    ],
+    "teachingFeedback": "危机传播的核心是“速度 + 透明 + 一致口径”。补救动作能把负面情绪从情绪扩散转为问题解决路径。",
+    "imcTheoryPoint": "公关作为可信背书可降低认知不确定性；危机时必须用跨渠道一致行动稳定信任。",
+    "visualKey": "beauty_visual_pr_crisis_transparency",
+    "description": "通过透明补救与一致口径修复信任并保护长期资产。",
+    "teaching": {
+      "title": "IMC 教学点：危机传播要行动一致",
+      "bullets": [
+        "透明度降低不确定性，减少负面扩散。",
+        "公关口径与客服/内容同步，才能真正修复信任。"
+      ]
+    },
+    "category": "beauty",
+    "impact": {
+      "trust": 8,
+      "sentiment": 6,
+      "sales": -2,
+      "budget": -12,
+      "consistency": 2,
+      "stakeholderRelations": 7,
+      "teamwork": 2,
+      "longTermAsset": 3
+    },
+    "tone": "good"
+  },
+  {
+    "id": "beauty-kol-community-alliance",
+    "module": "alliance",
+    "title": "KOL 合作与社群共创：把传播做成共识（联盟协同）",
+    "situationDescription": "品牌需要把“看过”和“愿意买”之间的距离缩短。你决定联合 KOL 与社群组织共创活动：既要传播，也要让用户形成可持续的口碑资产。",
+    "decisionGoal": "通过 KOL 与社群的协同，让信任与长期资产共同增长，并把销售转化为体验与复购基础。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "KOL x 社群共创教学（真实测评 + 反馈闭环）",
+        "effect": {
+          "trust": 7,
+          "awareness": 6,
+          "sales": 8,
+          "consistency": 4,
+          "stakeholderRelations": 6,
+          "budget": -24,
+          "sentiment": 4,
+          "teamwork": 1,
+          "longTermAsset": 5
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "单点KOL带货（短期热度，但与品牌叙事不强一致）",
+        "effect": {
+          "awareness": 8,
+          "trust": 1,
+          "sales": 5,
+          "consistency": -1,
+          "stakeholderRelations": -1,
+          "budget": -18,
+          "sentiment": -1,
+          "teamwork": 0,
+          "longTermAsset": 0
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "分级KOL + 试用转化（体验承接与口碑沉淀）",
+        "effect": {
+          "awareness": 5,
+          "trust": 5,
+          "sales": 7,
+          "consistency": 3,
+          "stakeholderRelations": 2,
+          "budget": -20,
+          "sentiment": 2,
+          "teamwork": 2,
+          "longTermAsset": 4
+        }
+      }
+    ],
+    "teachingFeedback": "联盟协同的价值在于把“传播”变成“参与”，再把参与转化为长期口碑资产。",
+    "imcTheoryPoint": "利益相关者沟通（KOL/社群）能提升信任；当叙事与体验一致时，口碑扩散更可持续。",
+    "visualKey": "beauty_visual_kol_community_alliance",
+    "description": "联合KOL与社群共创，把传播做成共识并沉淀长期资产。",
+    "teaching": {
+      "title": "IMC 教学点：利益相关者参与提升信任与长期资产",
+      "bullets": [
+        "共创让用户从“被触达”变成“共同建构”。",
+        "体验闭环能让销量从短期冲刺转为复购逻辑。"
+      ]
+    },
+    "category": "beauty",
+    "impact": {
+      "trust": 7,
+      "awareness": 6,
+      "sentiment": 4,
+      "sales": 8,
+      "budget": -24,
+      "consistency": 4,
+      "stakeholderRelations": 6,
+      "teamwork": 1,
+      "longTermAsset": 5
+    },
+    "tone": "good"
+  }
+]
+

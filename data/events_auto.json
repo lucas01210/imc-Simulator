@@ -1,0 +1,227 @@
+[
+  {
+    "id": "auto-ad-landing-nurture",
+    "module": "advertising",
+    "title": "广告投放 + 落地口径 + 线索培育：把触达变成信任转化",
+    "situationDescription": "智能汽车新品需要快速抢占注意力。你发现：虽然点击率高，但到店咨询与试驾转化不稳定，原因是广告承诺与落地信息（配置/参数/使用场景）不一致。",
+    "decisionGoal": "通过统一口径与跨渠道线索培育提升信任与转化效率，并避免因错配引发负面舆情。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "统一承诺落地 + 线索培育（内容/邮件/到店讲解一致）",
+        "effect": {
+          "awareness": 12,
+          "trust": 6,
+          "sales": 10,
+          "budget": -24,
+          "consistency": 3,
+          "stakeholderRelations": 2,
+          "sentiment": 2,
+          "teamwork": 2,
+          "longTermAsset": 5
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "点击诱导创意（短期吸睛但承诺不稳）",
+        "effect": {
+          "awareness": 18,
+          "trust": -4,
+          "sales": 12,
+          "budget": -26,
+          "consistency": -2,
+          "stakeholderRelations": -1,
+          "sentiment": -6,
+          "teamwork": 0,
+          "longTermAsset": -4
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "经销商协同口径 + 共同内容（让体验更一致）",
+        "effect": {
+          "awareness": 10,
+          "trust": 4,
+          "sales": 9,
+          "budget": -22,
+          "consistency": 2,
+          "stakeholderRelations": 6,
+          "sentiment": 1,
+          "teamwork": 3,
+          "longTermAsset": 4
+        }
+      }
+    ],
+    "teachingFeedback": "汽车属于高介入购买。IMC 中“广告”必须被落地页与线索培育的内容承接，否则信任缺口会在到店环节爆发。",
+    "imcTheoryPoint": "广告建立触达；内容与渠道协同建立信任；协同越一致，转化越稳，舆情越不易反噬。",
+    "visualKey": "auto_visual_ad_landing_consistency",
+    "description": "统一承诺与线索培育，把触达转成信任转化。",
+    "teaching": {
+      "title": "IMC 教学点：媒介与落地的一致口径",
+      "bullets": [
+        "广告提高覆盖，但不等于信任。",
+        "落地信息与到店讲解必须同口径，减少不确定性。"
+      ]
+    },
+    "category": "auto",
+    "impact": {
+      "awareness": 12,
+      "trust": 6,
+      "sentiment": 2,
+      "sales": 10,
+      "budget": -24,
+      "consistency": 3,
+      "stakeholderRelations": 2,
+      "teamwork": 2,
+      "longTermAsset": 5
+    },
+    "tone": "good"
+  },
+  {
+    "id": "auto-channel-dealer-alliance",
+    "module": "alliance",
+    "title": "渠道协同：广告→展厅→试驾→售后承接一体化",
+    "situationDescription": "你选择做试驾活动，但经销商执行差异导致体验不稳定。用户在网上分享时提到“到店说法与线上不一致”，信任被削弱。",
+    "decisionGoal": "通过跨渠道一致交付把体验做“可复制”，提升信任与长期口碑，并让销量更可持续。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "经销商协同交付 + 统一试驾脚本 + 售后承诺",
+        "effect": {
+          "trust": 7,
+          "awareness": 4,
+          "sales": 13,
+          "budget": -28,
+          "consistency": 5,
+          "stakeholderRelations": 8,
+          "sentiment": 4,
+          "teamwork": 4,
+          "longTermAsset": 6
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "执行松散（线上热、线下慢、话术不一致）",
+        "effect": {
+          "trust": -2,
+          "awareness": 3,
+          "sales": 9,
+          "budget": -20,
+          "consistency": -4,
+          "stakeholderRelations": -3,
+          "sentiment": -2,
+          "teamwork": 0,
+          "longTermAsset": -2
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "结构化培训 + 线索管理（把体验差异收敛）",
+        "effect": {
+          "trust": 5,
+          "awareness": 5,
+          "sales": 11,
+          "budget": -24,
+          "consistency": 3,
+          "stakeholderRelations": 4,
+          "sentiment": 2,
+          "teamwork": 2,
+          "longTermAsset": 4
+        }
+      }
+    ],
+    "teachingFeedback": "渠道协同是 IMC 的执行关键：不是“多做活动”，而是把用户旅程里的信息与体验一致交付。",
+    "imcTheoryPoint": "一致的跨渠道体验能把短期转化转为长期信任与口碑扩散。",
+    "visualKey": "auto_visual_dealer_alliance_consistency",
+    "description": "广告→展厅→试驾→售后承接一体化提升长期口碑。",
+    "teaching": {
+      "title": "IMC 教学点：渠道协同决定“体验一致性”",
+      "bullets": ["统一交付脚本减少话术差异。", "售后承诺让体验延长到购买之后。"]
+    },
+    "category": "auto",
+    "impact": {
+      "trust": 7,
+      "awareness": 4,
+      "sentiment": 4,
+      "sales": 13,
+      "budget": -28,
+      "consistency": 5,
+      "stakeholderRelations": 8,
+      "teamwork": 4,
+      "longTermAsset": 6
+    },
+    "tone": "good"
+  },
+  {
+    "id": "auto-crisis-recall-repair",
+    "module": "crisis",
+    "title": "危机管理：安全召回谣言的透明修复与一致口径",
+    "situationDescription": "网上出现“安全隐患”的二次传播。若处理不当会造成舆情失控、信任迅速消耗，最终伤害长期品牌资产。",
+    "decisionGoal": "通过透明修复与行动一致，快速止血舆情、恢复信任，并保护长期口碑与资产。",
+    "options": [
+      {
+        "id": "opt1",
+        "label": "透明召回计划 + 公开进度 + 经销商统一话术",
+        "effect": {
+          "trust": 10,
+          "sentiment": 6,
+          "sales": -1,
+          "budget": -22,
+          "consistency": 2,
+          "stakeholderRelations": 7,
+          "teamwork": 3,
+          "longTermAsset": 5
+        }
+      },
+      {
+        "id": "opt2",
+        "label": "拖延并否认（让谣言持续发酵）",
+        "effect": {
+          "trust": -10,
+          "sentiment": -14,
+          "sales": -6,
+          "budget": -18,
+          "consistency": -5,
+          "stakeholderRelations": -6,
+          "teamwork": -3,
+          "longTermAsset": -8
+        }
+      },
+      {
+        "id": "opt3",
+        "label": "第三方验证 + 透明解释 + 用户补偿方案",
+        "effect": {
+          "trust": 6,
+          "sentiment": 2,
+          "sales": 2,
+          "budget": -20,
+          "consistency": 1,
+          "stakeholderRelations": 4,
+          "teamwork": 1,
+          "longTermAsset": 2
+        }
+      }
+    ],
+    "teachingFeedback": "危机传播要以行动一致为核心：透明解释降低不确定性，补救动作体现承担，口径一致避免二次伤害。",
+    "imcTheoryPoint": "危机时信任是底座。公关与渠道协同的速度与一致性决定是否能从负面扩散中恢复。",
+    "visualKey": "auto_visual_crisis_recall_repair",
+    "description": "通过透明修复与一致口径止血舆情并恢复信任。",
+    "teaching": {
+      "title": "IMC 教学点：危机传播的速度与一致性",
+      "bullets": ["透明解释降低不确定性。", "一致行动与统一话术保护长期资产。"]
+    },
+    "category": "auto",
+    "impact": {
+      "trust": 10,
+      "sentiment": 6,
+      "sales": -1,
+      "budget": -22,
+      "consistency": 2,
+      "stakeholderRelations": 7,
+      "teamwork": 3,
+      "longTermAsset": 5
+    },
+    "tone": "good"
+  }
+]
+

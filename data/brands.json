@@ -1,0 +1,42 @@
+[
+  {
+    "id": "beauty",
+    "name": "NeoLumen 美妆",
+    "tagline": "内容叙事与可信背书协同增长",
+    "category": "beauty",
+    "startingBudget": 90,
+    "startingTeamwork": 56,
+    "startingAwareness": 16,
+    "startingTrust": 24,
+    "startingSentiment": 10,
+    "startingSales": 12,
+    "startingLongTermAsset": 26
+  },
+  {
+    "id": "tea",
+    "name": "国潮茶饮 CMO 团队",
+    "tagline": "利益相关者关系与口碑资产沉淀",
+    "category": "tea",
+    "startingBudget": 95,
+    "startingTeamwork": 52,
+    "startingAwareness": 14,
+    "startingTrust": 22,
+    "startingSentiment": 8,
+    "startingSales": 11,
+    "startingLongTermAsset": 30
+  },
+  {
+    "id": "auto",
+    "name": "SmartDrive 智能汽车",
+    "tagline": "媒介与渠道协同把“触达”变“信任转化”",
+    "category": "auto",
+    "startingBudget": 100,
+    "startingTeamwork": 50,
+    "startingAwareness": 13,
+    "startingTrust": 20,
+    "startingSentiment": 7,
+    "startingSales": 12,
+    "startingLongTermAsset": 24
+  }
+]
+
