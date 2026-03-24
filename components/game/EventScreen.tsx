@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import type { BrandTypeId } from "../../types/brand";
 import type { EventDefinition, EventOption } from "../../types/event";
+import type { GameState } from "../../types/game";
 import type { GameResult } from "../../types/result";
 import { getBrandById } from "../../lib/dataLoader";
 import {
@@ -36,6 +37,7 @@ export default function EventScreen({ brandId }: { brandId: BrandTypeId }) {
   >(null);
   const [result, setResult] = useState<GameResult | null>(null);
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
+  const [pendingState, setPendingState] = useState<GameState | null>(null);
 
   const reducedMotion = useReducedMotion();
 
@@ -64,49 +66,68 @@ export default function EventScreen({ brandId }: { brandId: BrandTypeId }) {
     setResolvedTurnEventsTitle(currentEvent.title);
     setFeedbackText(buildFeedbackText(currentEvent, option));
 
-    // Give a short moment to show the animation before the numbers jump.
+    // Give a short moment to show pixel feedback before applying next state.
     window.setTimeout(() => {
       const next = resolveTurn(gameState, [optionId]);
-      setGameState(next);
-
-      if (isGameOver(next)) {
-        setResult(finalizeGame(next));
-        setPhase("after");
-      } else {
-        setPhase("after");
-      }
+      setPendingState(next);
+      setPhase("after");
     }, 420);
   }
 
   function onContinue() {
     if (phase === "resolving") return;
-    if (!showResult) {
+    if (showResult) return;
+    if (!pendingState) return;
+
+    setGameState(pendingState);
+    setPulseId((x) => x + 1);
+
+    if (isGameOver(pendingState)) {
+      setResult(finalizeGame(pendingState));
+    } else {
       setPhase("selecting");
-      setFeedbackText("");
-      setResolvedTurnEventsTitle(null);
-      setSelectedOptionId(null);
-      return;
     }
-    // MVP：结局由当前页展示，无需强制跳转。
+
+    setPendingState(null);
+    setFeedbackText("");
+    setResolvedTurnEventsTitle(null);
+    setSelectedOptionId(null);
   }
 
   const options = currentEvent?.options ?? [];
+  const statusLabel =
+    phase === "resolving"
+      ? "系统结算中..."
+      : phase === "after"
+        ? "已结算，可进入下一事件"
+        : "等待你的选择";
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10">
+    <div className="mx-auto max-w-6xl px-4 py-8 sm:py-10">
       <div className="space-y-6">
-        <header className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-          <div>
-            <div className="text-xs text-[#00ffaa] font-semibold">
+        <header className="relative overflow-hidden border border-[#00ffaa]/16 bg-[#06080d]/35 px-4 py-4 shadow-pixel sm:px-5">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 opacity-20"
+            style={{
+              backgroundImage:
+                "repeating-linear-gradient(90deg, rgba(0,255,170,0.08) 0 2px, transparent 2px 10px)",
+            }}
+          />
+          <div className="relative flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <div className="text-xs font-semibold text-[#00ffaa]">
               游戏主界面
+              </div>
+              <div className="mt-2 text-2xl font-extrabold">{brand.name}</div>
+              <div className="mt-1 text-sm leading-relaxed text-[#a8b3c7]">
+                {brand.tagline}
+              </div>
             </div>
-            <div className="mt-2 text-2xl font-extrabold">{brand.name}</div>
-            <div className="mt-1 text-sm text-[#a8b3c7] leading-relaxed">
-              {brand.tagline}
+            <div className="space-y-1 text-right text-xs text-[#7f8aa3]">
+              <div>回合 {progressText}</div>
+              <div className="text-[#00ffaa]">{statusLabel}</div>
             </div>
-          </div>
-          <div className="text-right text-xs text-[#7f8aa3]">
-            回合 {progressText}
           </div>
         </header>
 
@@ -150,7 +171,11 @@ export default function EventScreen({ brandId }: { brandId: BrandTypeId }) {
                   </div>
                 </div>
                 <div className="text-right text-xs text-[#7f8aa3]">
-                  {phase === "after" ? "已结算" : "待选择"}
+                  {phase === "after"
+                    ? "已结算"
+                    : phase === "resolving"
+                      ? "结算中"
+                      : "待选择"}
                 </div>
               </div>
 
@@ -209,14 +234,17 @@ export default function EventScreen({ brandId }: { brandId: BrandTypeId }) {
                   onClick={() => onPick(o.id)}
                   disabled={phase !== "selecting"}
                   className={[
-                    "w-full bg-[#070a0f]/60 border-[#00ffaa]/15",
+                    "w-full min-h-[70px] bg-[#070a0f]/65 border-[#00ffaa]/15 text-left",
                     selectedOptionId === o.id && phase === "resolving"
                       ? "border-[#00ffaa]/65"
                       : "",
                   ].join(" ")}
                   variant="primary"
                 >
-                  {o.label}
+                  <span className="flex w-full items-center justify-between gap-3">
+                    <span className="leading-snug">{o.label}</span>
+                    <span className="text-[11px] text-[#7f8aa3]">选择</span>
+                  </span>
                 </PixelButton>
               </motion.div>
             ))}
@@ -234,20 +262,22 @@ export default function EventScreen({ brandId }: { brandId: BrandTypeId }) {
               transition={{ duration: 0.18, ease: "easeOut" }}
               className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
             >
-            <div className="text-xs text-[#7f8aa3]">
-              {phase === "selecting"
-                ? "选择 1 个选项后，系统将结算指标并生成 IMC 反馈。"
-                : "结算完成。点击继续进入下一事件。"}
-            </div>
-            <div className="flex gap-3">
-              <PixelButton
-                disabled={phase !== "after"}
-                onClick={onContinue}
-                className="bg-[#070a0f]/60 border-[#00ffaa]/15"
-              >
-                继续
-              </PixelButton>
-            </div>
+              <div className="text-xs text-[#7f8aa3]">
+                {phase === "selecting"
+                  ? "选择 1 个选项后，系统将结算指标并生成 IMC 反馈。"
+                  : phase === "resolving"
+                    ? "系统正在结算，请稍候..."
+                    : "结算完成。点击继续进入下一事件。"}
+              </div>
+              <div className="flex gap-3">
+                <PixelButton
+                  disabled={phase !== "after"}
+                  onClick={onContinue}
+                  className="bg-[#070a0f]/60 border-[#00ffaa]/15"
+                >
+                  继续
+                </PixelButton>
+              </div>
             </motion.div>
           </AnimatePresence>
         ) : null}

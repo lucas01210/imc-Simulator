@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "IMC 模拟器",
   description: "整合营销传播（IMC）决策模拟器（本地离线版）",
+  icons: {
+    icon: "/icon",
+    shortcut: "/icon",
+    apple: "/icon",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

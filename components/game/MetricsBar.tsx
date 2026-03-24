@@ -13,16 +13,30 @@ function MetricTile({
   sublabel: string;
   pulseId: number;
 }) {
+  const safeValue = Math.max(0, Math.min(100, Math.round(value)));
   return (
-    <div className="flex flex-col gap-1 border border-[#00ffaa]/20 bg-[#06080d]/55 px-3 py-2">
-      <div className="text-xs text-[#a8b3c7]">{label}</div>
+    <div className="flex flex-col gap-2 border border-[#00ffaa]/20 bg-[#06080d]/55 px-3 py-2">
+      <div className="flex items-center justify-between gap-3">
+        <div className="text-xs text-[#a8b3c7]">{label}</div>
+        <div className="text-[10px] text-[#7f8aa3]">{safeValue}/100</div>
+      </div>
+      <div className="h-2 w-full overflow-hidden border border-[#00ffaa]/18 bg-[#05070c]">
+        <div
+          key={`${pulseId}-${label}-bar`}
+          className="h-full bg-[repeating-linear-gradient(90deg,rgba(0,255,170,0.72)_0_6px,rgba(0,255,170,0.38)_6px_10px)]"
+          style={{
+            width: `${safeValue}%`,
+            transition: "width 320ms ease-out",
+          }}
+        />
+      </div>
       <div className="flex items-baseline justify-between gap-3">
         <div
           key={`${pulseId}-${label}`}
-          className="text-xl font-bold tracking-wide text-[#e8eef6]"
+          className="text-lg font-bold tracking-wide text-[#e8eef6]"
           style={{ lineHeight: 1.1 }}
         >
-          <span className="imc-digit-pop">{Math.round(value)}</span>
+          <span className="imc-digit-pop">{safeValue}</span>
         </div>
       </div>
       <div className="text-[11px] text-[#7f8aa3]">{sublabel}</div>
@@ -61,8 +75,8 @@ export default function MetricsBar({
       `}</style>
 
       <div className="flex items-baseline justify-between gap-3">
-        <div className="text-sm font-bold text-[#e8eef6]">指标面板</div>
-        <div className="text-xs text-[#7f8aa3]">Core IMC metrics（MVP）</div>
+        <div className="text-sm font-bold text-[#e8eef6]">指挥舱指标面板</div>
+        <div className="text-xs text-[#7f8aa3]">Core IMC Metrics</div>
       </div>
 
       <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

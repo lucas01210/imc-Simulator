@@ -18,11 +18,12 @@ export default function PixelButton({
   ...props
 }: PixelButtonProps) {
   const base =
-    "group relative inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold " +
+    "group relative inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold tracking-wide " +
     "shadow-pixel transition-transform duration-150 " +
     "border active:translate-y-[1px] active:shadow-none hover:brightness-110 " +
     "disabled:cursor-not-allowed disabled:opacity-55 disabled:hover:brightness-100 " +
-    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00ffaa]/40 focus-visible:ring-offset-1";
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00ffaa]/40 focus-visible:ring-offset-1 " +
+    "before:pointer-events-none before:absolute before:inset-0 before:border before:border-black/35";
 
   const variantClass =
     variant === "ghost"
@@ -33,11 +34,27 @@ export default function PixelButton({
     <>
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-150 hover:opacity-100"
+        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-150 group-hover:opacity-100"
         style={{
           backgroundImage:
             "linear-gradient(90deg, rgba(0,255,170,0.18), transparent 35%, rgba(0,255,170,0.12))",
         }}
+      />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1 top-1 h-1 w-1 bg-[#00ffaa]/45"
+      />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute right-1 top-1 h-1 w-1 bg-[#00ffaa]/45"
+      />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-1 left-1 h-1 w-1 bg-[#00ffaa]/45"
+      />
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-1 right-1 h-1 w-1 bg-[#00ffaa]/45"
       />
       {/* Click feedback (active state) */}
       <span
